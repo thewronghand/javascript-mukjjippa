@@ -3,19 +3,19 @@ const { GAME_MESSAGE } = require('../utils/constants/message');
 
 const inputView = {
   readRockPaperScissors(callback) {
-    Console.readLine(GAME_MESSAGE.readRockPaperScissors, () => {
+    Console.readLine(GAME_MESSAGE.readRockPaperScissors, (input) => {
       callback(input);
     });
   },
 
   readMukjjippa(callback) {
-    Console.readLine(GAME_MESSAGE.readMukjjippa, () => {
+    Console.readLine(GAME_MESSAGE.readMukjjippa, (input) => {
       callback(input);
     });
   },
 
   readGameCommand(callback) {
-    Console.readLine(GAME_MESSAGE.readGameCommand, () => {
+    Console.readLine(GAME_MESSAGE.readGameCommand, (input) => {
       callback(input);
     });
   }
